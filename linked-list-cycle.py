@@ -8,6 +8,9 @@ class Solution:
     # @param head, a ListNode
     # @return a boolean
     def hasCycle(self, head):
+        """
+        use slow-fast cursor: if the is a cyle exists, fast will meet slow!
+        """
         if not head: return False
         slow = fast = head
         while fast:
